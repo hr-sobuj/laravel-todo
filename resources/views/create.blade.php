@@ -17,26 +17,29 @@
                     <div class="w-1/2 mr-2">
                         <label for="name" class="block text-sm font-semibold mb-2">Name</label>
                         <input type="text" id="name" name="name"
-                               class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Enter name" value="{{ old('name') }}">
+                            class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Enter name"
+                            value="{{ old('name') }}">
                         @error('name')
-                        <p class="text-red-500 font-bold">{{$message}}</p>
+                            <p class="text-red-500 font-bold">{{ $message }}</p>
                         @enderror
                     </div>
                     <div class="w-1/2 ml-2">
                         <label for="task" class="block text-sm font-semibold mb-2">Task</label>
                         <input type="text" id="task" name="task"
-                               class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Enter task" value="{{ old('task') }}">
+                            class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Enter task"
+                            value="{{ old('task') }}">
                         @error('task')
-                        <p class="text-red-500 font-bold">{{$message}}</p>
+                            <p class="text-red-500 font-bold">{{ $message }}</p>
                         @enderror
                     </div>
                 </div>
                 <div class="mb-4">
                     <label for="due_date" class="block text-sm font-semibold mb-2">Due Date</label>
                     <input type="date" id="due_date" name="due_date"
-                           class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Select due date" value="{{ old('due_date') }}">
+                        class="w-full border border-gray-300 rounded px-3 py-2" placeholder="Select due date"
+                        value="{{ old('due_date') }}">
                     @error('due_date')
-                    <p class="text-red-500 font-bold">{{$message}}</p>
+                        <p class="text-red-500 font-bold">{{ $message }}</p>
                     @enderror
                 </div>
                 <div>

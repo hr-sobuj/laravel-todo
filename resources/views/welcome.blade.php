@@ -28,15 +28,18 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($todos as $todo)
                     <tr>
-                        <td class="px-4 py-2 border-b border-gray-200">John Doe</td>
-                        <td class="px-4 py-2 border-b border-gray-200">Complete project</td>
-                        <td class="px-4 py-2 border-b border-gray-200">2024-04-10</td>
+                        <td class="px-4 py-2 border-b border-gray-200">{{$todo->name}}</td>
+                        <td class="px-4 py-2 border-b border-gray-200">{{$todo->task}}</td>
+                        <td class="px-4 py-2 border-b border-gray-200">{{$todo->deu_date}}</td>
                         <td class="px-4 py-2 border-b border-gray-200">
                             <button class="bg-blue-500 px-3 py-1 text-white rounded hover:bg-blue-600">Edit</button>
                             <button class="bg-red-500 px-3 py-1 text-white rounded hover:bg-red-600">Delete</button>
                         </td>
                     </tr>
+                    @endforeach
+                   
                 </tbody>
             </table>
         </div>

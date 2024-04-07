@@ -3,9 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\TodoController;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('todo.home');
+Route::get('/', [TodoController::class,'index'])->name('todo.home');
 
 
 Route::get('/create', function () {
