@@ -12,7 +12,7 @@
 <body class="bg-gray-100">
     <header class="bg-gray-900">
         <nav class="container mx-auto py-6">
-            <h1 class="text-4xl font-bold text-white">Todo App</h1>
+            <h1 class="text-4xl font-bold text-white"><a href="{{route('todo.home')}}">Todo App</a></h1>
         </nav>
     </header>
     <main class="container mx-auto mt-8">
